@@ -144,3 +144,10 @@ select{
     text-decoration: none;
     text-align: center;
 }
+
+error-ouput{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
