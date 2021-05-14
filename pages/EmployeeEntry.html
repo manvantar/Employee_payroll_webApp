@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll form</title>
     <link rel="stylesheet" href="../css/simple.css">
+    <script src="../js/SampleScript.js"></script> 
+    <script src="../js/EmployeePayrollData.js"></script> 
 </head>
 
 <body>
@@ -19,13 +21,14 @@
             </div>
         </div>
     </header>
-    <div class="form-content">
-        <form class="form" action="#" onsubmit="save();return fasle">
+    <div id="formId" class="form-content">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save();return fasle">
             <div class="form-head">
                 Employee Payroll form </div>
             <div class="row-content">
                 <label class="label text" for"name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="profile"> Profile image</label>
